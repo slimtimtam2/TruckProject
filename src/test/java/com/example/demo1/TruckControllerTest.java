@@ -67,4 +67,15 @@ public class TruckControllerTest {
         List<Truck> expectedList = truckController.all();
         assertEquals(expectedList,listTrucks);
     }
+    @Test
+    public void testAddTruck(){
+        Truck truck1 = new Truck();
+        truck1.setBlock("12345");
+        truck1.setLot("98765");
+        truckRepository = mock(TruckRepository.class);
+        truckController = new TruckController(truckRepository);
+        when(truckRepository.save(truck1)).thenReturn(truck1);
+        Truck truck2 = truckController.addTruck(truck1);
+        assertEquals(truck2,truck1);
+    }
 }
