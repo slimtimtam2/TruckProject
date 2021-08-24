@@ -27,6 +27,11 @@ GET /trucks/{id}
 
 This endpoint will return the one truck connected with this location ID
 
+EXAMPLE RESPONSE: 
+```
+{"locationId":"1515984","blocklot":"0140007","block":"0140","lot":"007","address":"90 BROADWAY","applicant":"Senor Sisig","facilityType":"Truck","zipCodes":null}
+```
+
 GET /trucks/block/{block}
 
 This endpoint will return a list of trucks that have the same block ID
