@@ -31,8 +31,13 @@ GET /trucks/block/{block}
 
 This endpoint will return a list of trucks that have the same block ID
 
-POST /addTruck
+POST /trucks
 
 This endpoint will add a new truck to the DB
 
 ## How To Run
+Either run from your IDE or use:
+
+./mvnw clean spring-boot:run
+
+and the localhose URL to hit should be localhost:8080

@@ -21,7 +21,7 @@ public class TruckController {
         return repository.findAll();
     }
 
-    @PostMapping("addTrucks")
+    @PostMapping("/trucks")
     Truck addTruck(@RequestBody Truck truck){
         return repository.save(truck)
     }
